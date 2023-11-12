@@ -2,7 +2,7 @@ from selene.support.shared import browser
 from selene import be, have
 
 
-def test_hw_conflict():
+def test_hw_conflict_conflict():
     browser.open('https://demoqa.com/text-box')
     browser.element('[class=" mr-sm-2 form-control"]').should(be.blank).type('LAYLA')
     browser.element('[class="mr-sm-2 form-control"]').should(be.blank).type('123@GMAIL.COM')
